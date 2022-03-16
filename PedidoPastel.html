@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lengh='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        
+        <link rel="stylesheet" href="estilos.css">
+        <title>Pastelería</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/pasteleria.png" alt="pasteleria">
+            </div>
+            <h2>Un gran sabor desde la selección</h2>
+            <nav>
+                <a href="./IndexPasteleria.html" class="nav-link">Inicio</a>
+                <a href="./Pasteles.html" class="nav-link">Pasteles</a>
+                <a href="./PedidoPastel.html" class="nav-link">Pedido</a>
+            </nav>
+        </header>
+        <br>
+
+        <h3>Llena los siguientes datos para agendar tu pedido</h3>
+        <form action="pedido.js">
+            <label for="Nombre">Escribe tu nombre completo</label><br>
+            <input type="text" id="Nombre" name="Nombre">
+            <br><br>
+            <label for="tel1">Escribe tu número de teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10">
+            <br><br>
+            <label for="correo1">Escribe tu email</label><br>
+            <input type="email" id="correo1" name="correo1">
+            <br><br>
+            <p>Selecciona el tipo de pastel que quieres</p>
+            <input type="radio" id="tresleches" name="tipopastel" value="Tresleches">
+            <label for="tresleches">Tres Leches</label><br>
+            <input type="radio" id="chocoflan" name="tipopastel" value="Chocoflan">
+            <label for="chocoflan">Chocoflan</label><br>
+            <input type="radio" id="cheesecake" name="tipopastel" value="Cheesecake">
+            <label for="cheesecake">CheeseCake</label><br>
+            <input type="radio" id="milhojas" name="tipopastel" value="Milhojas">
+            <label for="milhojas">Mil Hojas</label><br>
+            <input type="radio" id="tiramisu" name="tipopastel" value="Tiramisu">
+            <label for="tiramisu">Tiramisú</label><br><br>
+            <p>Selecciona los sabores de relleno que desees</p>
+            <input type="checkbox" id="fresa" name="fresa" value="Fresa">
+            <label for="fresa">Fresa</label><br>
+            <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+            <label for="chocolate">Chocolate</label><br>
+            <input type="checkbox" id="frambuesa" name="frambuesa" value="Frambuesa">
+            <label for="frambuesa">Frambuesa</label><br>
+            <input type="checkbox" id="cajeta" name="cajeta" value="Cajeta">
+            <label for="cajeta">Cajeta</label><br>
+            <input type="checkbox" id="limon" name="limon" value="Limon">
+            <label for="limon">Limón</label><br><br>
+            <p>Selecciona los adornos que desees</p>
+            <input type="checkbox" id="mensaje" name="mensaje" value="Mensaje">
+            <label for="mensaje">Mensaje especial</label><br>
+            <input type="checkbox" id="imagen" name="imagen" value="Imagen">
+            <label for="imagen">Imagen o foto decorativa</label><br>
+            <input type="checkbox" id="flores" name="flores" value="Flores">
+            <label for="flores">Flores comestibles</label><br>
+            <input type="checkbox" id="topper" name="topper" value="Topper">
+            <label for="topper">Topper</label><br>
+            <input type="checkbox" id="perlas" name="perlas" value="Perlas">
+            <label for="Perlas">Perlas</label><br>
+            <p>Selecciona la fecha y hora de entrega</p>
+            <input type="datetime-local" id="fecha2" name="fecha2"><br>
+        </form>
+        <br><br>
+        <hr>
+        <p>DESCRIPCIÓN DEL PEDIDO:</p>
+        <p>Haz elegido -------- como tipo de pastel<br>
+            y los sabores ---------  -----------, así como los adornos -----------<br>
+            -------------  -------------.<br>
+            Tu pedido está agendado para el día --/--/-- a las -:-- p.m.></p>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+        <footer>
+            <p>Ubicación: Parque España No. 7, 06170 Ciudad de México.</p>
+            <p>Teléfonos: 5585344092 y 5585344190</p>
+            <p>Email: contacto@pasteleriabizcochos</p>
+            <p>Horario de atención: Lunes a Sábado de 9:00 a.m. a 7:00 p.m. y Domingo de 10:00 a.m. a 5:00 p.m.</p>
+        </footer>
+    </body>
+</html>
